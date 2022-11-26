@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+body{
+    overflow-y: hidden;
+}
+.header{
+    z-index: 1;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+.logo_text{
+    letter-spacing: 0.2em;
+    color: #f60;
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_menu{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.header_menu li{
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header_background{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(44,62,80,1) 100%);
+    box-shadow: -1px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 89.97px;
+    z-index: -1;
+        -webkit-animation: header_background 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: header_background 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes header_background {
+    0% {
+      -webkit-transform: translateX(1500px);
+              transform: translateX(1500px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(1500px);
+              transform: translateX(1500px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+
+
+
+
+
+
+.hero{
+    padding: 150px 0 ;
+    margin: 0 auto;
+    text-align: center;
+    color: #f60;
+
+}
+main{
+    background: url(../ing/watercolor-back-school-background-with-white-space_52683-41450.webp);
+    background-size: cover;
+    background-position: center;
+    animation-name: blur;
+    animation-duration: 1s;
+}
+.hero_title{
+    font-family: 'Rubik Mono One', sans-serif;
+
+    font-size: 100px;
+}
+.hero_subtitle{
+    font-family: 'Rubik Mono One', sans-serif;
+
+    font-size: 40px;
+    padding: 20px 0;
+}
+.hero_button{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero_buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px 0;
+}
+.hero p, .hero_buttons{
+	-webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes blur{
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 100%;
+    }
+  }
+  

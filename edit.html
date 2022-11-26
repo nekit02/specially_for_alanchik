@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/edit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Admin Panel - News</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="logo">
+                    <img width="50px" src="./ing/305580430_763751714962955_5639290002061569784_n.png" alt="" class="logo_img">
+                    <p class="logo_text">ADMIN PANEL</p>
+                </div>
+                <ul class="header_menu">
+
+                    <li class="Main"><a href="./index.html"> Main</a></li>
+                    <li class="News"><a href="./news.html">News</a></li>
+                    <li class="Teachers"><a href="">Teachers</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="header_background"></div>
+<main>
+    <section class="hero">
+        <div class="container header_container">
+            <p class="hero_title">EDIT NEWS</p>
+            <div class="hero_content">
+ 
+                    <form asp-action="CreateTeachers" asp-controller="Teachers" method="post" enctype="multipart/form-data"> 
+
+                        <input placeholder="News' name" type="text" id="nameNews" name="newsName"/> 
+                        
+                        <input placeholder="News' description" type="text" id="descriptionNews" name="newsDescription"/> 
+
+
+                            <input value="News' image" placeholder="Add News image" type="file" id="imageNews" name="newsImage" multiple>
+                            
+
+                        <input type= "submit" id="submit" value="Сохранить новость" /> 
+                         
+                    
+                    
+                    </form>
+            </div>
+        </div>
+        
+    </section>
+</main>
